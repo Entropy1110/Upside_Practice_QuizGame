@@ -63,7 +63,7 @@ contract Quiz{
         return quizzes.length;
     }
     
-    function betToPlay(uint quizId) public  {
+    function betToPlay(uint quizId) public payable{
         Quiz_item memory q = Quiz_item(0, "", "", 0, 0);
         
         for (uint i = 0; i < quizzes.length; i++) {
